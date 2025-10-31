@@ -1,0 +1,36 @@
+h1 {
+    text-align: center;
+    font-style: italic;
+    font-size: 3rem;
+    color: blue;
+  }
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 5px solid red;
+    padding: 8px;
+    text-align: center;
+    color: red;
+    font-size: 1.5rem;
+  }
+.original {
+  margin: 0 auto;
+}
+
+.rotate svg {
+  transform: rotate(180deg);
+}
+
+.bw svg {
+  filter: grayscale(1);
+}
+
+.flipped svg {
+  transform: scale(-1,1);
+}
+
+.squeeze svg{
+  transform: scale(1, .5);
+}
