@@ -1,3 +1,4 @@
+console.log("entering the script file")
 const logos = {
     devils:`<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_33_1936)">
@@ -212,11 +213,11 @@ const logos = {
 const teamNames = ['devils', 'lightning', 'bluejackets', 'panthers', 'oilers', 'leafs', 'wild', 'sharks', 'avalanche', 'rangers']
 const classNames = ['original','flipped','rotate', 'squeeze', 'bw']
 
-teamNames.forEach(team => {
-  d3.select('tbody').append("tr").attr('id', team)
-  
-  classNames.forEach(classname => {
-    d3.select(`#${team}`).append('td').html(logos[team]).attr("class", classname);
 
-  })
+teamNames.forEach(team => {
+    d3.select('TeamTable').append("tr").attr('id', team)
+    classNames.forEach(classname => {
+        d3.select(`#${team}`).append('td').html(logos[team]).attr("class", classname);
+
+    })
 })
