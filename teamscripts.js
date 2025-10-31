@@ -215,7 +215,7 @@ const classNames = ['original','flipped','rotate', 'squeeze', 'bw']
 
 
 teamNames.forEach(team => {
-    d3.select('#TeamTable').append("tr").attr('id', team)
+    d3.select('tbody').append("tr").attr('id', team)
     classNames.forEach(classname => {
         d3.select(`#${team}`).append('td').html(logos[team]).attr("class", classname);
 
